@@ -1,0 +1,7 @@
+<van-popup show="{{ show }}" duration="{{ 0 }}" position="top" overlay="{{ false }}" z-index="{{ 9999 }}" close-on-click-overlay="{{ false }}" custom-style="height: 100vh">
+    <van-search value="{{ keywords }}" label="地址" show-action placeholder="请输入搜索关键词" bind:change="onChange" bind:cancel="onCancel"> </van-search>
+
+    <van-cell-group class="address-list">
+        <van-cell title="{{ i.name }}" label="{{ i.district }}" is-link catch:click="onSelectAddress" data-index="{{ index }}" wx:for="{{tips}}" wx:for-item="i" />
+    </van-cell-group>
+</van-popup>

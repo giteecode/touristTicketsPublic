@@ -1,0 +1,16 @@
+/* components/address/index.wxss */
+
+.address-list{
+    text-align: left;
+}
+.text_box{
+    padding: 10px;
+    border-bottom: 1px solid #dedede;
+}
+
+.text_box .name{
+    color: #575757;
+}
+.text_box .district{
+    font-size: 24rpx;
+}

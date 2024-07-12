@@ -1,0 +1,23 @@
+<!--components/common/reply.wxml-->
+<view class="reply-list">
+    <view class="reply-button">
+        <van-button type="primary" bindclick="onInputValue" data-name="isHidden" data-value="{{ !isHidden }}" round hairline size="mini">
+            {{ isHidden ? '回复' : '取消' }}
+        </van-button>
+    </view>
+
+    <view class="reply-content" hidden="{{ isHidden }}">
+        <van-field type="textarea" value="{{ content }}" bindinput="onInputContent" data-name="content" placeholder="输入回复内容" border autosize="{{ {minHeight: 50 } }}" />
+        <view style="text-align: right">
+            <van-button type="info" size="mini" bindclick="submitReply">回复</van-button>
+        </view>
+    </view>
+
+    <view wx:for="{{ replyList }}" class="reply-item">
+        <view class="image">
+            <e-img src="{{ item.headimgurl }}" class="head" pb="100"></e-img>
+            <view class="nickname"> {{ item.nickname }} </view>
+        </view>
+        <view class="content"> {{ item.huifuneirong }} </view>
+    </view>
+</view>

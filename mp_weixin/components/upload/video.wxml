@@ -1,0 +1,6 @@
+<view style="padding: 30rpx">
+    <view style="font-size: 36rpx; padding: 30rpx 20rpx">
+        <slot></slot>
+    </view>
+    <van-uploader file-list="{{ fileList }}" accept="video" max-count="{{ 1 }}" max-duration="60" camera="back" bind:after-read="afterRead" />
+</view>

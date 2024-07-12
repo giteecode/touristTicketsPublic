@@ -1,0 +1,6 @@
+<!--components/image/img.wxml-->
+
+<view class="img-box pb{{pb}}" id="jsImgBox">
+    <view class="img" style="background-image: url( {{ imgSrc }} );"></view>
+    <!-- <image src="{{ imgSrc }}" lazy-load style="width: {{ width }};height: {{ height }};" /> -->
+</view>

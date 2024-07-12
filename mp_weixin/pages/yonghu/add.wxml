@@ -1,0 +1,24 @@
+<van-cell-group>
+    <van-field
+        type="text"
+        error-message="{{ errors.yonghuming }}"
+        label="用户名"
+        placeholder="输入用户名"
+        value="{{ form.yonghuming }}"
+        bindinput="onInput"
+        data-name="form.yonghuming"
+    />
+    <van-field type="password" error-message="{{ errors.mima }}" label="密码" placeholder="输入密码" value="{{ form.mima }}" bindinput="onInput" data-name="form.mima" />
+    <van-field type="text" error-message="{{ errors.xingming }}" label="姓名" placeholder="输入姓名" value="{{ form.xingming }}" bindinput="onInput" data-name="form.xingming" />
+    <e-select value="{{ form.xingbie }}" label="性别" data-name="form.xingbie" bindchange="onInput"
+        ><e-option value="男" label="男"></e-option>
+        <e-option value="女" label="女"></e-option> </e-select
+    ><view class="errors">{{ errors.xingbie }}</view>
+    <van-field type="text" error-message="{{ errors.shouji }}" label="手机" placeholder="输入手机" value="{{ form.shouji }}" bindinput="onInput" data-name="form.shouji" />
+    <e-upload-image value="{{ form.touxiang }}" data-name="form.touxiang" bindinput="onInput"> 上传：头像 </e-upload-image> <view class="errors">{{ errors.touxiang }}</view>
+</van-cell-group>
+
+<view style="padding: 20rpx">
+    <van-button type="primary" bindclick="submit" block loading="{{ loading }}" loading-text="发布中">保存</van-button>
+</view>
+<v-footer />

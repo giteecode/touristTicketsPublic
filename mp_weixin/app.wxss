@@ -1,0 +1,93 @@
+/**app.wxss**/
+@import './miniprogram_npm/@vant/weapp/icon/index.wxss';
+/* @import '/pages/footer/template.wxss'; */
+page {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica,
+    Segoe UI, Arial, Roboto, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei',
+    sans-serif;
+}
+page,view,image,input {
+  display: block;
+  box-sizing: border-box;
+}
+.divider{
+  height: 26rpx;
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+.van-goods-action{
+    z-index: 100;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.cell-title{
+  font-size: 30rpx;
+  color: #000000;
+  padding: 30rpx;
+}
+
+.display-flex{
+  display: flex;
+}
+.display-block{
+  display: block;
+}
+.display-inline{
+  display: inline;
+}
+.display-inline-block{
+  display: inline-block;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.align-items-center{
+  align-content: center;
+}
+.flex-grow0{
+  flex-grow: 0;
+}
+.flex-grow1{
+  flex-grow: 1;
+}
+.flex-shrink0{
+  flex-shrink: 0;
+}
+.flex-shrink1{
+  flex-shrink: 1;
+}
+
+
+.justify-content-space-between{
+  justify-content: space-between;
+}
+
+.mr5{
+  margin-right: 10rpx;
+}
+
+.value-class {
+    flex: none !important;
+}
+
+.flex-flow-row{
+    flex-flow: row;
+}
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-flow-column{
+    flex-flow: column;
+}

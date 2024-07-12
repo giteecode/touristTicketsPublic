@@ -1,0 +1,13 @@
+<!--pages/footer/footer.wxml-->
+<view style="height: 90rpx"></view>
+<view class="tabbar" enable-flex="true">
+    <block wx:for="{{tabBar}}" wx:for-item="item" wx:for-index="idx" wx:key="*">
+        <navigator url="{{item.url}}" class="navigator {{Selected==idx?'active':''}}" open-type="reLaunch">
+            <view class="tabbar-box">
+                <van-icon name="{{item.icon}}" />
+                <!-- <icon class="iconfont {{item.icon}}"></icon> -->
+                <text>{{item.name}}</text>
+            </view>
+        </navigator>
+    </block>
+</view>

@@ -1,0 +1,65 @@
+{
+  "name": "vue",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@riophae/vue-treeselect": "^0.4.0",
+    "animate.css": "^4.1.1",
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.15.5",
+    "font-awesome": "^4.7.0",
+    "font-awesome.css": "^4.7.2",
+    "normalize.css": "^8.0.1",
+    "nprogress": "^0.2.0",
+    "echarts": "^4.8.0",
+    "objectdiff": "^1.1.0",
+    "qs": "^6.10.1",
+    "v-viewer": "^1.6.4",
+    "video.js": "^7.14.3",
+    "viewerjs": "^1.10.1",
+    "vue": "^2.6.11",
+    "vue-baidu-map": "^0.21.22",
+    "vue-router": "^3.5.2",
+    "vue-treeselect": "^1.0.7",
+    "vue-video-player": "^5.0.2",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "regenerator-runtime": "^0.13.9",
+    "sass": "^1.37.5",
+    "sass-loader": "^10.1.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

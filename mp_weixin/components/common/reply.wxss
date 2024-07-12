@@ -1,0 +1,36 @@
+/* components/common/reply.wxss */
+
+.reply-list{
+  padding: 10px;
+  background-color: #f2f2f2;
+  margin-top: 10rpx;
+  font-size: 26rpx;
+}
+.reply-button{
+  text-align: right;
+}
+.reply-content{
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  border: 1px solid #dedede;
+}
+.reply-item {
+  margin-top: 10rpx;
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 10rpx;
+  display: flex;
+}
+
+.reply-item .image{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+  margin-right: 15rpx;
+  min-width: 120rpx;
+  
+}
+.head{
+  width: 32rpx;
+  overflow: hidden;
+  margin-right: 15rpx;
+}

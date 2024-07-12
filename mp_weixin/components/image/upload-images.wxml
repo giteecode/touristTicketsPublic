@@ -1,0 +1,8 @@
+<!--components/image/upload-images.wxml-->
+
+<view style="padding: 30rpx">
+    <view style="font-size: 36rpx; padding: 30rpx 20rpx">
+        <slot></slot>
+    </view>
+    <van-uploader file-list="{{ fileList }}" bind:delete="deleteImages" preview-full-image="{{ false }}" accept="image" multiple bind:after-read="afterRead" max-count="9" />
+</view>

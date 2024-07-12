@@ -1,0 +1,9 @@
+<!--components/image/upload-images.wxml-->
+
+<view>
+    <view wx:if="{{ value }}">
+        <view wx:if="{{ downloadFile == '' }}" bindtap="download"> {{ downloadText }} </view>
+        <view wx:else bindtap="openDocument"> 下载完成打开文件 </view>
+    </view>
+    <view wx:else> - </view>
+</view>

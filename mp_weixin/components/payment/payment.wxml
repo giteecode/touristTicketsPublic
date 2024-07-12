@@ -1,0 +1,3 @@
+<!--components/payment/payment.wxml-->
+
+<van-button type="primary" bind:click="payment" block loading="{{ loading }}" loading-text="支付中"> {{ btnText }} </van-button>

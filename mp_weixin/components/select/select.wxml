@@ -1,0 +1,22 @@
+<!--components/select/select.wxml-->
+
+<van-cell-group>
+    <van-cell bind:click="showPopup" title="{{ label }}" value="{{ content }}" is-link></van-cell>
+</van-cell-group>
+
+<van-popup show="{{ show }}" position="bottom" round bind:close="onClose">
+    <van-picker
+        show-toolbar
+        cancel-button-text=""
+        bind:cancel="onClose"
+        bind:confirm="onConfirm"
+        title="请选择{{ label }}"
+        value-key="label"
+        columns="{{ columns }}"
+        default-index="{{ defaultIndex }}"
+        bind:change="onChange"
+    />
+</van-popup>
+<view style="display: none">
+    <slot></slot>
+</view>

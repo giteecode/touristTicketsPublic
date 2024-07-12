@@ -1,0 +1,60 @@
+export default [
+    {
+        path: "yonghuadd",
+        name: "IndexyonghuAdd",
+        component: () => import("@/views/yonghu/webadd"),
+        meta: { title: "用户添加" },
+    },
+    {
+        path: "jingdianxinxi",
+        name: "IndexjingdianxinxiList",
+        component: () => import("@/views/jingdianxinxi/index"),
+        meta: { title: "景点信息列表", authLogin: true, msg: true },
+    },
+    {
+        path: "jingdianxinxidetail",
+        name: "IndexjingdianxinxiDetail",
+        props: (route) => ({ id: route.query.id }),
+        component: () => import("@/views/jingdianxinxi/webdetail"),
+        meta: { title: "景点信息详情", authLogin: true, msg: true },
+    },
+    {
+        path: "menpiaodetail",
+        name: "IndexmenpiaoDetail",
+        props: (route) => ({ id: route.query.id }),
+        component: () => import("@/views/menpiao/webdetail"),
+        meta: { title: "门票详情", authLogin: true, msg: true },
+    },
+    {
+        path: "goupiaoadd",
+        name: "IndexgoupiaoAdd",
+        component: () => import("@/views/goupiao/webadd"),
+        meta: { title: "购票添加", authLogin: true, msg: true },
+    },
+    {
+        path: "goupiaodetail",
+        name: "IndexgoupiaoDetail",
+        props: (route) => ({ id: route.query.id }),
+        component: () => import("@/views/goupiao/webdetail"),
+        meta: { title: "购票详情", authLogin: true, msg: true },
+    },
+    {
+        path: "meishixinxi",
+        name: "IndexmeishixinxiList",
+        component: () => import("@/views/meishixinxi/index"),
+        meta: { title: "美食信息列表" },
+    },
+    {
+        path: "meishixinxidetail",
+        name: "IndexmeishixinxiDetail",
+        props: (route) => ({ id: route.query.id }),
+        component: () => import("@/views/meishixinxi/webdetail"),
+        meta: { title: "美食信息详情", authLogin: true, msg: true },
+    },
+    {
+        path: "pinglunadd",
+        name: "IndexpinglunAdd",
+        component: () => import("@/views/pinglun/webadd"),
+        meta: { title: "评论添加", authLogin: true, msg: true },
+    },
+];
